@@ -1,0 +1,62 @@
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    border-spacing: 5px;
+    margin-top: 150px;
+    font-family: Calibri;
+}
+
+table {
+    background-color: darksalmon;
+}
+
+th, td {
+    background-color: burlywood;
+}
+
+td:hover {
+    background-color: cadetblue;
+}
+
+th {
+    width: 150px;
+}
+
+td {
+    width: 150px;
+}
+
+p {
+    font-family: Calibri;
+    text-align: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+  cursor: pointer;
+}
+
+
+.tooltiptext {
+  visibility: hidden; 
+  width: 130px;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1; 
+}
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
