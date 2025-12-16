@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Button.css">
     <title>11a2 HTML Projekt 2026</title>
+
+    <script>
+        function openForm() {
+            document.getElementById('myForm').style.display = 'block';
+        }
+        function closeForm() {
+            document.getElementById('myForm').style.display = 'none';
+        }
+    </script>
 </head>
 
 <body>
@@ -33,7 +43,7 @@
                             <li><a href="animation.html">CSS Animáció</a>
                             <li><a href="form.html">HTML Űrlap</a>
                             <li><a href="table.html">HTML táblázat</a></li>
-                            <li><a href="gallery.htm">Képgaléria</a></li>
+                            <li><a href="gallery.html">Képgaléria</a></li>
                             <li><a href="media.html">Média</a></li>
                         </ul>
                     </li>
@@ -131,6 +141,18 @@
             &#169; 2025/26 | Mohácsi Bálint | All Rights Reserved
         </h2>
     </footer>
+    <button class="open-button" onclick="openForm()">Open form</button>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Login</h1>
+            <label for="">Email</label>
+            <input type="text" name="email" placeholder="Enter email...">
+            <label for="">Password</label>
+            <input type="text" name="psw" placeholder="Enter password...">
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn" onclick="closeForm()">Close</button>
+        </form>
+    </div>
 </body>
 
 </html>
